@@ -28,8 +28,13 @@ const dogs: DOG[] = [
         breed: 'Beagle',
         age: 0.5,
         description: 'something nice..'
+    },
+    {
+        image: '',
+        breed: 'someBreed',
+        age: 4,
+        description: 'something nice!'
     }
-
 ]
 
 export default dogs
