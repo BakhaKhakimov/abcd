@@ -1,10 +1,8 @@
 import React from "react";
 import "./App.css";
-import ShibaInu from "./img/shiba-inu.jpeg";
-import Beagle from "./img/beagle.jpeg";
-import Doberman from "./img/doberman.jpeg";
+import dogs from "./mock/dogs";
 
-export const App: React.FC = () => {
+function App() {
   return (
     <div className="App">
       <nav>
@@ -16,34 +14,18 @@ export const App: React.FC = () => {
         </ul>
       </nav>
 
-      <section className="cards">
-        <div className="pets-card">
-          <img src={ShibaInu} alt="shibainu-photo" />
-          <p>Name of the breed of pet</p>
-        </div>
-        <div className="pets-card">
-          <img src={Beagle} alt="beagle-photo" />
-          <p>Name of the breed of pet</p>
-        </div>
-        <div className="pets-card">
-          <img src={Doberman} alt="doberman-photo" />
-          <p>Name of the breed of pet</p>
-        </div>
-        <div className="pets-card">
-          <img src={ShibaInu} alt="" />
-          <p>Name of the breed of pet</p>
-        </div>
-        <div className="pets-card">
-          <img src={Beagle} alt="" />
-          <p>Name of the breed of pet</p>
-        </div>
-        <div className="pets-card">
-          <img src={Doberman} alt="" />
-          <p>Name of the breed of pet</p>
-        </div>
+      <section id="dogs" className="cards">
+        {dogs.map((dog, index) => (
+          <div className="pets-card" key={index}>
+            <img src={dog.image} alt="dogs-photo" />
+            <p>{dog.breed}</p>
+            <p>{dog.age} years old</p>
+            <p>{dog.description}</p>
+          </div>
+        ))}
       </section>
     </div>
   );
-};
+}
 
 export default App;
