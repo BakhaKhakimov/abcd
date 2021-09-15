@@ -1,3 +1,4 @@
+import { type } from "os";
 import ShibaInu from "../../src/img/shiba-inu.jpeg";
 import Beagle from "../../src/img/beagle.jpeg";
 import Doberman from "../../src/img/doberman.jpeg";
