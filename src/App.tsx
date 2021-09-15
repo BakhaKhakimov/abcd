@@ -6,10 +6,10 @@ function App() {
     <div className="App">
       <nav>
         <ul>
-          <a href="">Home</a>
-          <a href="">News</a>
-          <a href="">Career</a>
-          <a href="">About us</a>
+          <a href="home">Home</a>
+          <a href="news">News</a>
+          <a href="career">Career</a>
+          <a href="about us">About us</a>
         </ul>
       </nav>
 
