@@ -39,12 +39,12 @@
 }
 .cards {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .pets-card {
-  margin: 30px;
+  margin: 20px;
 }
 
 .pets-card img {

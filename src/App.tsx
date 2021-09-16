@@ -1,5 +1,5 @@
 import "./App.css";
-import dogs from "./mock/dogs";
+import Card from "../src/Components/Card";
 
 function App() {
   return (
@@ -12,17 +12,9 @@ function App() {
           <a href="about us">About us</a>
         </ul>
       </nav>
+ 
+        <Card />
 
-      <section id="dogs" className="cards">
-        {dogs.map((dog, index) => (
-          <div className="pets-card" key={index}>
-            <img src={dog.image} alt="dogs-photo" />
-            <p>{dog.breed}</p>
-            <p>{dog.age} years old</p>
-            <p>{dog.description}</p>
-          </div>
-        ))}
-      </section>
     </div>
   );
 }
