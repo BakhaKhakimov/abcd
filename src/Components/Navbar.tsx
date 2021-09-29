@@ -4,7 +4,7 @@ export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <nav className="relative flex flex-wrap items-center justify-between px-2 py-4 mb-3">
+      <nav className="relative font-mono flex flex-wrap items-center justify-between px-2 py-4 mb-3">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <a
@@ -64,7 +64,7 @@ export default function Navbar() {
             </a>
 
             <a
-              className="py-3 px-4 flex nav-item inline-block text-xs font-semibold leading-relaxed hover:bg-black hover:text-white rounded-full transition duration-100"
+              className="py-3 px-4 flex nav-item inline-block font-semibold leading-relaxed hover:bg-black hover:text-white rounded-full transition duration-100"
               href="login"
             >
               Sign in
