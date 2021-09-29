@@ -46,7 +46,7 @@ export default function Navbar() {
             </a>
             <a
               className="py-2 px-4 flex nav-item text-gray-500 hover:text-black"
-              href="news"
+              href="blog"
             >
               blog
             </a>
@@ -58,7 +58,7 @@ export default function Navbar() {
             </a>
             <a
               className="py-2 px-4 flex nav-item text-gray-500 hover:text-black"
-              href="careers"
+              href="contact"
             >
               contact
             </a>
