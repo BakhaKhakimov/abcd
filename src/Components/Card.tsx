@@ -3,7 +3,7 @@ import noImage from "../img/noimage.png";
 
 function Card() {
   return (
-    <section id="dogs" className="flex flex-wrap rounded justify-around">
+    <section id="dogs" className="flex flex-wrap rounded justify-around mt-4">
       {dogs.map((dog) => {
         const { id, breed, image, age, description } = dog;
         return (
