@@ -1,29 +1,13 @@
-import React from "react";
 import "./App.css";
-import dogs from "./mock/dogs";
+import Card from "../src/Components/Card";
+import Navbar from "./Components/Navbar";
 
 function App() {
   return (
     <div className="App">
-      <nav>
-        <ul>
-          <a href="">Home</a>
-          <a href="">News</a>
-          <a href="">Career</a>
-          <a href="">About us</a>
-        </ul>
-      </nav>
-
-      <section id="dogs" className="cards">
-        {dogs.map((dog, index) => (
-          <div className="pets-card" key={index}>
-            <img src={dog.image} alt="dogs-photo" />
-            <p>{dog.breed}</p>
-            <p>{dog.age} years old</p>
-            <p>{dog.description}</p>
-          </div>
-        ))}
-      </section>
+      <Navbar />
+      <Card />
+      <Card />
     </div>
   );
 }
